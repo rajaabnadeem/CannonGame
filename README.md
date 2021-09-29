@@ -1,1 +1,1 @@
-# CannonGameNotes
+# CannonGame
