@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class CalculateYValueTest {
     @Test
-//Given degree 0.78 and velocity 10
+//Given degree 0.78 and velocity 10 - Updated
     public void ValueOfY(){
         double degree =  0.78;
       int velocity=10;
