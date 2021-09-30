@@ -3,12 +3,10 @@ package cannongame;
 public class GettingFinalXCoordinate implements IGettingFinalXCoordinate {
 
 
-    public Double gettingFinalXCoordinate(double degree, int velocity){
+    public double gettingFinalXCoordinate(double degree, int velocity) {
 
-        return Math.cos(degree)*velocity;
+        return Math.cos(degree) * velocity;
+
     }
-
-
-
 
 }

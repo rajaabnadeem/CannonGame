@@ -2,5 +2,5 @@ package cannongame;
 
 public interface IGettingFinalXCoordinate {
 
-    public Double gettingFinalXCoordinate(double degree, int velocity);
+    double gettingFinalXCoordinate(double degree, int velocity);
 }

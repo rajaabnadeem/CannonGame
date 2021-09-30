@@ -25,7 +25,7 @@ public class GettingFinalXCoordinateTest {
 
         // Then: I  get back 7.10
 
-        assertEquals(7.10,result,-1);
+        assertEquals(7.10,result,0.01);
 
 
 
