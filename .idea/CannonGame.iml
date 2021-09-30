@@ -5,6 +5,9 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+<<<<<<< HEAD
     <orderEntry type="library" name="junit" level="project" />
+=======
+>>>>>>> 8e4cd3187e05f85479a411358a8789b1aff7f891
   </component>
 </module>
