@@ -1,6 +1,6 @@
 # CannonGame
 
-**VelocityValidator:**
+**VelocityValidator:** Shilpa
   -
     - Given: The user is asked for a velocity input
     - When: The user inputs a velocity of 1
@@ -20,7 +20,7 @@
   
 ---
 
-**AngleValidator:**
+**AngleValidator:** Ramsha
   -
     - Given: The user is asked for an angle input
     - When: The user inputs a angle of 1
@@ -40,7 +40,7 @@
   
 ---
 
-**Angle to Degree conversion:**
+**Angle to Degree conversion:** Rajaab
 -
   - Given: I have an angle of 45
   - When: I need it to be converted to degrees
@@ -52,7 +52,7 @@
   
 ---
 
-**Getting final x coordinate:**
+**Getting final x coordinate:** Roberto
 - 
   - Given: I have a degree of 0.78 and a velocity of 10
   - When I need to calculate the final x coordinate
@@ -64,7 +64,7 @@
  
 ---
 
-**Getting final y coordinate:**
+**Getting final y coordinate:** Priyanka
 -
   - Given: I have a degree of 0.78 and a velocity of 10
   - When I need to calculate the final y coordinate
@@ -75,7 +75,7 @@
   - Then: I would pass the degree and velocity into the sine function and get back C
   
 ---
-** Rounding Object **
+** Rounding Object ** Irfa
 -
  - Given: I have a number 7.5
  - When: I round the number
@@ -85,7 +85,7 @@
  - When: I round the number
  - Then: I get back 7
 
-**Determining if the target was hit:**
+**Determining if the target was hit:** Chuck
   - Given: Our final x and y coordinates are (7, 7) and our target is (7, 7)
   - When: We determine if our cannon hits
   - Then: I have successfully hit the target
@@ -105,7 +105,7 @@
   - When: We determine if our cannon hits
   - Then: I have not hit the target
 
-**Attempts**
+**Attempts** Mansour
   - Given: I the user hasn't shot yet
   - When: The user shoots
   - Then: The number of shots is 1
@@ -113,6 +113,3 @@
   - Given: I the user has shot once
   - When: The user shoots again
   - Then: The number of shots is 2
-
-
-
