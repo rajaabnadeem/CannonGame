@@ -27,9 +27,6 @@ public class GettingFinalXCoordinateTest {
 
         assertEquals(7.10,result,0.01);
 
-
-
-
     }
 
 }

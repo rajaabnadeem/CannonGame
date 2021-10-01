@@ -113,3 +113,41 @@
   - Given: I the user has shot once
   - When: The user shoots again
   - Then: The number of shots is 2
+---
+  
+**Game Flow Class** Roberto && Irfa
+
+- generate a target
+
+- Need to call Flow class2 until it has a hit
+    - call the obj that keep track of the attempt
+    - when a hit display the result
+
+**Shot Flow Class** Charles && Mansour
+
+- Call Angle Flow Class
+- Call Velocity Flow Call
+- Calculate the degree
+- Calculate X,Y coordinate
+- Display where your shot hit
+- Calculate whether it hit the target or not
+
+**Input Angle Validator Flow Class** Ramsha && Rajaab
+
+- given: I am taking a shot and I have a target of 5,7
+- When: I enter an angle of 45
+- Then: I call my angle validator 1 time
+
+- given: I am taking a shot and I have a target of 5,7
+- When: I enter an angle of 0
+- Then: I call my angle validator 1 time
+
+**Input Velocity Validator Flow Class** Priyanka && Shilpa
+
+- given: I am taking a shot and I enter an angle of 45
+- When: I enter a velocity of 10
+- Then: I call my velocity validator 1 time
+
+
+
+
