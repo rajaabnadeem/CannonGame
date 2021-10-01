@@ -13,7 +13,7 @@ public class CalculateYValueTest {
 //when I calculate Y value
       ICalculateYValue calY=new CalculateYValue();
       double Y=calY.YValue(degree,velocity);
-      //I would pass the degree and velocity into the sine function and get back 7.03
+      //Then I would pass the degree and velocity into the sine function and get back 7.03
 assertEquals(7.03,Y,0.01);
     }
 
@@ -25,7 +25,7 @@ assertEquals(7.03,Y,0.01);
 //when I calculate Y value
             ICalculateYValue calY=new CalculateYValue();
             double Y=calY.YValue(degree,velocity);
-            //I would pass the degree and velocity into the sine function and get back 7.49
+           // Then would pass the degree and velocity into the sine function and get back 7.49
             assertEquals(7.49,Y,0.01);
 
         }
@@ -39,7 +39,7 @@ assertEquals(7.03,Y,0.01);
 //when I calculate Y value
         ICalculateYValue calY=new CalculateYValue();
         double Y=calY.YValue(degree,velocity);
-        //I would pass the degree and velocity into the sine function and get back 19.19
+        //then would pass the degree and velocity into the sine function and get back 19.19
         assertEquals(19.19,Y,0.01);
 
     }
