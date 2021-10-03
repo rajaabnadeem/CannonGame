@@ -2,27 +2,12 @@ package cannongame;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.*;   
 
 
 
 public class AngleTest {
 
-//    //Given: We have an angle 1
-//    When: we validate the angle
-//    Then: That angle is valid
-
-//    Given: We have angle 91
-//    When: we validate the angle
-//    Then: That angle is invalid
-
-//    Given: We have angle of 90
-//    When: we validate the angle
-//    Then: The angle is valid
-
-//    Given: We have angle of 0
-//    When: We validate the angle
-//    Then: The angle is invalid
 
     @Test
     public void checkAngle1() {
@@ -30,15 +15,19 @@ public class AngleTest {
         //When: we validate the angle
 
         IAngleV obj1 = new AngleValidator();
-        boolean resolvedEquals = obj1.input_1(1);
+        boolean resolvedEquals = obj1.validate(1);
+
+        //Then the angle is valid
+        assertTrue(resolvedEquals);
     }
         @Test
         public void checkAngle2 ()
 
         {
-
+            //Given: We have an angle 91
+            //When: we validate the angle
             IAngleV obj2 = new AngleValidator();
-            boolean resolvedEqualsone = obj2.input_1(91);
+            boolean resolvedEqualsone = obj2.validate(91);
 
             //Then: That angle is valid
             assertFalse(resolvedEqualsone);
@@ -46,8 +35,10 @@ public class AngleTest {
         @Test
         public void checkAngle3 () {
 
+            //Given: We have an angle 90
+            //When: we validate the angle
             IAngleV obj3 = new AngleValidator();
-            boolean resolvedEqualstwo = obj3.input_1(90);
+            boolean resolvedEqualstwo = obj3.validate(90);
 
 
             //Then: That angle is valid
@@ -57,9 +48,12 @@ public class AngleTest {
         @Test
         public void checkAngle4 () {
 
+            //Given: We have an angle 0
+            //When: we validate the angle
             IAngleV obj4 = new AngleValidator();
-            boolean resolvedEqualsthree = obj4.input_1(0);
+            boolean resolvedEqualsthree = obj4.validate(0);
 
+            //Then: That angle is invalid
             assertFalse(resolvedEqualsthree);
         }
 
