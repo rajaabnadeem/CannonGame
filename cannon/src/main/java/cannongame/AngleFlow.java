@@ -10,17 +10,16 @@ public class AngleFlow implements IAngleFlow {
         _Angle1 = Angle1;
     }
 
-    public int getAngle() {
+    public double getAngle() {
 
         Scanner reader = new Scanner(System.in);
         System.out.println("Enter an angle between 1 - 90:");
-        int result = reader.nextInt();
+        double result = reader.nextDouble();
 
         while (!_Angle1.validate(result)) {
             System.out.println("Enter an angle between 1 - 90:");
-            result = reader.nextInt();
+            result = reader.nextDouble();
         }
-        reader.close();
         return result;
     }
 
