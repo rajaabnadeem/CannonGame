@@ -12,7 +12,7 @@ public class VelocityFlow implements IVelocityFlow {
 
     public int getVelocity() {
         Scanner reader = new Scanner(System.in);
-        System.out.println("Enter an angle between 1 - 90:");
+        System.out.println("Enter an V between 1 - 90:");
         int result = reader.nextInt();
 
         while (!_velocityValidate.checkVelocity(result)) {
