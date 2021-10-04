@@ -2,5 +2,7 @@ package cannongame;
 
 public interface IGameFlow {
 
-    String playGame();
+    void playGame();
+    int getxTarget();
+    int getyTarget();
 }
