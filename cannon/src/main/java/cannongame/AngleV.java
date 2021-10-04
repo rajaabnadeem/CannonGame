@@ -1,6 +1,6 @@
 package cannongame;
 
-public class AngleValidator implements IAngleV {
+public class AngleV implements IAngleV {
 
     public boolean validate(double angle) {
 
@@ -11,4 +11,3 @@ public class AngleValidator implements IAngleV {
         }
     }
 }
-
