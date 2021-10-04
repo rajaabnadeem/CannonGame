@@ -14,6 +14,7 @@ public class GameFlow implements IGameFlow{
         this.shotFlow=shotFlow;
         this.createTarget();
 
+<<<<<<< HEAD
     }
     public void playGame() {
         createTarget();
@@ -32,6 +33,27 @@ public class GameFlow implements IGameFlow{
 
 
 
+=======
+    public String playGame() {
+//        createTarget();
+//        IShotFlow shot= new ShotFlow(new AngleFlow(), new VelocityFlow(), new DegreeConversion(), new GettingFinalXCoordinate(), new CalculateYValue(), new RoundingObject(), new TargetHit() );
+//        IAttempt attempt = new Attempt();
+//
+//        gameStillOn = true;
+//        while (gameStillOn) {
+//            if(shot.shoot(xTarget,yTarget)){
+//                return "The Target was hit in the" + attempt.getShot()+ "attempt!!!";
+//                gameStillOn = false;
+//
+//            }
+//
+//
+//            }return "Sorry, you missed";
+//
+
+        return "Sorry";
+        }
+>>>>>>> 365b570c12f3052cc3905695489b8d57254cf1e6
 
 
 

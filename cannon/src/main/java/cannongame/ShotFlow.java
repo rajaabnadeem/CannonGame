@@ -1,6 +1,9 @@
 package cannongame;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 365b570c12f3052cc3905695489b8d57254cf1e6
 public class ShotFlow implements IShotFlow{
     private IAngleFlow angleFlow;
     private IVelocityFlow velocityFlow;
@@ -22,12 +25,10 @@ public class ShotFlow implements IShotFlow{
         this.finalYCoordinate= finalYCoordinate;
         this.roundingObject= roundingObject;
         this.targetHit= targetHit;
-
-
-
     }
 
     public boolean shoot(int targetX, int targetY) {
+<<<<<<< HEAD
 
         public class ShotFlow implements IShotFlow {
 
@@ -48,3 +49,16 @@ public class ShotFlow implements IShotFlow{
             }
         }
     }
+=======
+        int angle = angleFlow.getAngle();
+        int velocity = velocityFlow.getVelocity();
+        double degree = degreeConversion.ConvertToDegrees(angle);
+        double X = finalXCoordinate.gettingFinalXCoordinate(degree, velocity);
+        double Y = finalYCoordinate.YValue(degree, velocity);
+        int finalX = roundingObject.roundNumber(X);
+        int finalY = roundingObject.roundNumber(Y);
+        System.out.println("Your shot hit X: " + finalX + " Y: " + finalY);
+        return targetHit.hit(finalX, finalY, targetX, targetY);
+    }
+}
+>>>>>>> 365b570c12f3052cc3905695489b8d57254cf1e6

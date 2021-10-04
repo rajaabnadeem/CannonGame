@@ -7,7 +7,10 @@ import static org.mockito.Mockito.*;
 
 public class ShotFlowTest {
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 365b570c12f3052cc3905695489b8d57254cf1e6
     @Test
 
     public void angleFlowTest() {
@@ -218,8 +221,9 @@ public class ShotFlowTest {
         shotFlow.shoot(5, 7
         );
 //        Then: I call the target hit one time
-        verify(mockTargetHit, times(1)).hit(9, 5,5,7);
+        verify(mockTargetHit, times(1)).hit(9, 5, 5, 7);
     }
+<<<<<<< HEAD
 
         @Test
 
@@ -426,3 +430,6 @@ public class ShotFlowTest {
         }
 
 }
+=======
+}
+>>>>>>> 365b570c12f3052cc3905695489b8d57254cf1e6

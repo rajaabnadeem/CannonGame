@@ -1,6 +1,7 @@
 package cannongame;
 
 public interface IShotFlow {
+<<<<<<< HEAD
 
     boolean shoot(int targetX, int targetY);
 
@@ -10,4 +11,7 @@ public interface IShotFlow {
 
     );
 
+=======
+    boolean shoot(int targetX, int targetY);
+>>>>>>> 365b570c12f3052cc3905695489b8d57254cf1e6
 }
