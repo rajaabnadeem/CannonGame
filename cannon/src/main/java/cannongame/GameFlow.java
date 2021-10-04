@@ -2,17 +2,23 @@ package cannongame;
 
 import java.util.Random;
 
-public class GameFlow {
+public class GameFlow implements IGameFlow{
     private int xTarget;
     private int yTarget;
     private boolean isTargetCreated = false;
     private boolean gameStillOn=false;
 
 
-    public void playGame(IShotFlow shot) {
+
+    public String playGame() {
         createTarget();
+
+
         gameStillOn = true;
         while (gameStillOn) {
+
+
+            }
 
 
 
