@@ -13,4 +13,7 @@ public class Attempt implements IAttempt{
         return shot;
     }
 
+    public int getShot() {
+        return shot;
+    }
 }
