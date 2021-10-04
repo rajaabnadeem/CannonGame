@@ -1,5 +1,5 @@
 package cannongame;
 
-public interface IVelocityFlow {
+public interface IVelocityFlow1 {
     public  int getVelocity();
 }

@@ -2,10 +2,10 @@ package cannongame;
 
 import java.util.Scanner;
 
-public class VelocityFlow implements IVelocityFlow{
+public class VelocityFlow1 implements IVelocityFlow1 {
 
     private IVelocityValidityCheckObj _velobj;
-    public VelocityFlow(IVelocityValidityCheckObj Vel){
+    public VelocityFlow1(IVelocityValidityCheckObj Vel){
         _velobj=Vel;
 
      }
