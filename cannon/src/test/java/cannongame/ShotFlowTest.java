@@ -29,10 +29,10 @@ public class ShotFlowTest {
         when(mockRoundingObject.roundNumber(4.97)).thenReturn(5);
         when(mockTargetHit.hit(9, 5, 5, 7)).thenReturn(false);
 
-        IShotFlow shotFlow = new ShotFlow();
-        shotFlow.shoot(5, 7, mockangleFlow, mockvelocityFlow, mockDegreeConversion,
+        IShotFlow shotFlow = new ShotFlow(mockangleFlow, mockvelocityFlow, mockDegreeConversion,
                 mockXCoordinate, mockYCoordinate,
-                mockRoundingObject, mockTargetHit
+                mockRoundingObject, mockTargetHit);
+        shotFlow.shoot(5, 7
         );
 //        Then: I call the Angle Flow Class 1 time
         verify(mockangleFlow, times(1)).getAngle();
@@ -59,10 +59,10 @@ public class ShotFlowTest {
         when(mockRoundingObject.roundNumber(4.97)).thenReturn(5);
         when(mockTargetHit.hit(9, 5, 5, 7)).thenReturn(false);
 
-        IShotFlow shotFlow = new ShotFlow();
-        shotFlow.shoot(5, 7, mockangleFlow, mockvelocityFlow, mockDegreeConversion,
+        IShotFlow shotFlow = new ShotFlow(mockangleFlow, mockvelocityFlow, mockDegreeConversion,
                 mockXCoordinate, mockYCoordinate,
-                mockRoundingObject, mockTargetHit
+                mockRoundingObject, mockTargetHit);
+        shotFlow.shoot(5, 7
         );
         //        Then: I call the Velocity Flow Class 1 time
         verify(mockvelocityFlow, times(1)).getVelocity();
@@ -90,10 +90,10 @@ public class ShotFlowTest {
         when(mockRoundingObject.roundNumber(4.97)).thenReturn(5);
         when(mockTargetHit.hit(9, 5, 5, 7)).thenReturn(false);
 
-        IShotFlow shotFlow = new ShotFlow();
-        shotFlow.shoot(5, 7, mockangleFlow, mockvelocityFlow, mockDegreeConversion,
+        IShotFlow shotFlow = new ShotFlow(mockangleFlow, mockvelocityFlow, mockDegreeConversion,
                 mockXCoordinate, mockYCoordinate,
-                mockRoundingObject, mockTargetHit
+                mockRoundingObject, mockTargetHit);
+        shotFlow.shoot(5, 7
         );
         //        Then: I call the convert to degree 1 time
         verify(mockDegreeConversion, times(1)).ConvertToDegrees(30);
@@ -120,10 +120,10 @@ public class ShotFlowTest {
         when(mockRoundingObject.roundNumber(4.97)).thenReturn(5);
         when(mockTargetHit.hit(9, 5, 5, 7)).thenReturn(false);
 
-        IShotFlow shotFlow = new ShotFlow();
-        shotFlow.shoot(5, 7, mockangleFlow, mockvelocityFlow, mockDegreeConversion,
+        IShotFlow shotFlow = new ShotFlow(mockangleFlow, mockvelocityFlow, mockDegreeConversion,
                 mockXCoordinate, mockYCoordinate,
-                mockRoundingObject, mockTargetHit
+                mockRoundingObject, mockTargetHit);
+        shotFlow.shoot(5, 7
         );
         //        Then: I call the getting final X coordinate 1 time
         verify(mockXCoordinate, times(1)).gettingFinalXCoordinate(.52, 10);
@@ -150,10 +150,10 @@ public class ShotFlowTest {
         when(mockRoundingObject.roundNumber(4.97)).thenReturn(5);
         when(mockTargetHit.hit(9, 5, 5, 7)).thenReturn(false);
 
-        IShotFlow shotFlow = new ShotFlow();
-        shotFlow.shoot(5, 7, mockangleFlow, mockvelocityFlow, mockDegreeConversion,
+        IShotFlow shotFlow = new ShotFlow(mockangleFlow, mockvelocityFlow, mockDegreeConversion,
                 mockXCoordinate, mockYCoordinate,
-                mockRoundingObject, mockTargetHit
+                mockRoundingObject, mockTargetHit);
+        shotFlow.shoot(5, 7
         );
         //        Then: I call the getting final X coordinate 1 time
         verify(mockYCoordinate, times(1)).YValue(.52, 10);
@@ -181,10 +181,10 @@ public class ShotFlowTest {
         when(mockTargetHit.hit(9, 5, 5, 7)).thenReturn(false);
         ArgumentCaptor<Double> argCaptor = ArgumentCaptor.forClass(Double.class);
 
-        IShotFlow shotFlow = new ShotFlow();
-        shotFlow.shoot(5, 7, mockangleFlow, mockvelocityFlow, mockDegreeConversion,
+        IShotFlow shotFlow = new ShotFlow(mockangleFlow, mockvelocityFlow, mockDegreeConversion,
                 mockXCoordinate, mockYCoordinate,
-                mockRoundingObject, mockTargetHit
+                mockRoundingObject, mockTargetHit);
+        shotFlow.shoot(5, 7
         );
 //        Then: I call the rounding object 2 times
         verify(mockRoundingObject, times(2)).roundNumber(argCaptor.capture());
@@ -211,10 +211,10 @@ public class ShotFlowTest {
         when(mockRoundingObject.roundNumber(4.97)).thenReturn(5);
         when(mockTargetHit.hit(9, 5, 5, 7)).thenReturn(false);
 
-        IShotFlow shotFlow = new ShotFlow();
-        shotFlow.shoot(5, 7, mockangleFlow, mockvelocityFlow, mockDegreeConversion,
+        IShotFlow shotFlow = new ShotFlow(mockangleFlow, mockvelocityFlow, mockDegreeConversion,
                 mockXCoordinate, mockYCoordinate,
-                mockRoundingObject, mockTargetHit
+                mockRoundingObject, mockTargetHit);
+        shotFlow.shoot(5, 7
         );
 //        Then: I call the target hit one time
         verify(mockTargetHit, times(1)).hit(9, 5,5,7);
