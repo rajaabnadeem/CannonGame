@@ -1,12 +1,11 @@
 package cannongame;
 
-public class ShotFlow implements IShotFlow{
+public class ShotFlow implements IShotFlow {
 
-    public boolean shoot(int targetX, int targetY, IAngleFlow angleFlow,
-                         IVelocityFlow velocityFlow, IDegreeConversion degreeConversion,
-                         IGettingFinalXCoordinate finalXCoordinate, ICalculateYValue finalYCoordinate,
-                         IRoundingObject roundingObject, ITargetHit targetHit
-    ) {
+    public boolean shoot(int targetX, int targetY, IAngleFlow angleFlow, IVelocityFlow velocityFlow,
+            IDegreeConversion degreeConversion, IGettingFinalXCoordinate finalXCoordinate,
+            ICalculateYValue finalYCoordinate, IRoundingObject roundingObject, ITargetHit targetHit) {
+
         int angle = angleFlow.getAngle();
         int velocity = velocityFlow.getVelocity();
         double degree = degreeConversion.ConvertToDegrees(angle);
