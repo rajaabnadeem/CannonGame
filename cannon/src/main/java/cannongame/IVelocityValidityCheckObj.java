@@ -2,6 +2,6 @@ package cannongame;
 
 public interface IVelocityValidityCheckObj {
 
-    public boolean checkVelocity(double input);
+    boolean checkVelocity(double input);
 
 }
